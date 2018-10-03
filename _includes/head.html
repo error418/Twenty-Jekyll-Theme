@@ -25,6 +25,9 @@
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/style-wide.css" />
         <link rel="stylesheet" href="assets/css/style-noscript.css" />
+        {% if site.mod_css -%}
+        <link rel="stylesheet" href="{{ site.mod_css }}" />
+        {% endif %}
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie/v9.css" /><![endif]-->
